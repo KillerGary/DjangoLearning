@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <script>
+
+        function test(){window.location.href="/Login/login01/?uname=zhangsan&pwd=123";}
+    </script>
+
 </head>
 <body>
-   <form action="/Login/login01" method="get">
+
+   <a href="/Login/login01/?uname=zhangsan&pwd=123">显示登陆页面</a>#方式一
+
+   <input type="button" onclick="test()" value="Get请求">#方法三
+
+   <form action="/Login/login01" method="get">#方式二
        <p>
            <label>用户名：</label><input type="text" name="uname">
        </p>
