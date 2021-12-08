@@ -22,4 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^Hello/', views.index_view),
     url(r'^Login/', include('Login.urls')),#创建一个新的应用
+    url(r'^runoob/', views.index_view2),
+    url(r'^runoob2/', views.index_view3),#变量；
+    url(r'^runoob3/', views.index_view4),#列表；采用用 . 索引下标取出对应的元素。
+    url(r'^runoob4/', views.index_view5),#字典
+    url(r'^index/', views.indexshow),#测试
 ]
